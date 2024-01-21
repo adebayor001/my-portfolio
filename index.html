@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    
+  </head>
+  <body>
+    <nav class="w-full dark:bg-black h-8 flex justify-around items-center max-sm:px-4 py-6 relative">
+      <div class="flex dive gap-2 items-center ">
+        <img class="h-8" src="./image/my logo.svg" alt="" />
+        <a class="text-[#232E35] ade text-2xl font-bold" href="./index.html">ADE.</a>
+      </div>
+      <ul class="flex gap-4 capitalize dark:text-white text-sm font-semibold max-sm:invisible">
+        <li><a class="hover:text-[#7E74F1]" href="#services">services</a></li>
+        <li><a class="hover:text-[#7E74F1]" href="#skills">skills</a></li>
+        <li><a class="hover:text-[#7E74F1]" href="#experience">experience</a></li>
+        <li><a class="hover:text-[#7E74F1]" href="#contact">contact</a></li>
+      </ul>
+      <div id="content" class="w-24 lg:hidden dark:bg-black dark:text-white hidden z-40 rounded-lg h-24 py-2 shadow-sm shadow-gray-500 absolute right-4 top-8">
+        <ul class=" flex flex-col items-center justify-center capitalize text-sm font-semibold ">
+            <li><a class="hover:text-[#7E74F1]" href="#services">services</a></li>
+            <li><a class="hover:text-[#7E74F1]" href="#skills">skills</a></li>
+            <li><a class="hover:text-[#7E74F1]" href="#experience">experience</a></li>
+            <li><a class="hover:text-[#7E74F1]" href="#contact">contact</a></li>
+          </ul>
+      </div>
+      <div class="flex cont items-center gap-2 ">
+    <button  onclick="dark()" class="btn"><img src="./image/dark mode.png" alt="" /></button>
+    <button id="light" onclick="dark()" class="hidden lit"><img src="./image/light-mode.svg" alt=""></button>
+        <button
+          class="bg-white cv border-2 rounded-lg p-1 hover:bg-[#7E74F1] hover:text-white max-sm:hidden text-sm font-semibold">
+          Download CV
+        </button>
+        <button onclick="opencontent()" id="openbtn" class="opencont lg:hidden md:hidden"><img src="./image/hamburger.svg" alt=""></button>
+        <button onclick="closecontent()" id="closebtn" class="closecont lg:hidden hidden"><img src="./image/x.svg" alt=""></button>
+      </div>
+      
+    </nav>
+    <main data-="zoom-in-up" class="h-[450px] w-full max-sm:flex-col max-sm:justify-center max-sm:gap-4 max-sm:px-4 md:px-4 mt-12 flex items-center justify-around">
+      <section class="h-[400px] w-96 flex-col flex justify-center">
+        <p class="uppercase tracking-[.30em] text-xs font-semibold text-[#656D72]">my name is</p>
+        <h1 class="uppercase text-3xl font-bold">
+          adebayo<span class="text-[#7E74F1]"> david</span>
+        </h1>
+        <p class="my-2 text-xs text-[#232E35] ">
+          Creative front-end developer with more than +2 years of experience in
+          enterprise companies and startups. Proficient in JavaScript, Angular, HTML, css
+          and React. Passionate about UI/UX
+        </p>
+        <div class="flex gap-4 py-2">
+            <a href="https://www.instagram.com/david.ade100?igsh=MXg3ajE3NHBqMmJweQ%3D%3D&utm_source=qr"><img class="h-4 " src="./image/instagram.png" alt=""></a>
+            <a href="https://twitter.com/AdebayorDavid"><img class="h-4 " src="./image/twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/david.amos.100046?mibextid=LQQJ4d"><img class="h-4 " src="./image/facebook.png" alt=""></a>
+        </div>
+      </section>
+      <section class="h-[400px] w-96 relative flex justify-center items-center">
+        <img class="h-80" src="./image/back.png" alt="">
+        <img class="absolute h-72 " src="./image/front.png" alt="">
+        <img class="absolute right-4" src="./image/Whats-removebg-preview.png" alt="">
+      </section>
+    </main>
+    <section data-="zoom-in-up" class="lg:h-[530px] section-e md:h-[530px] max-sm:mt-12 w-[100%] bg-[#F5F3FE] max-sm:py-6" id="services">
+        <div class="w-full  flex justify-center pt-12">
+        <div class=" text-left flex flex-col ">
+            <p class="uppercase tracking-[.30em] text-xs font-semibold text-[#656D72]">services</p>
+            <h1 class="capitalize text-3xl font-bold text-[#232E35]">specialized in</h1>
+        </div>
+    </div>
+    <div class="flex max-sm:flex-col max-sm:items-center justify-around pt-24">
+        <div class="md:w-64 box w-80 h-72 bg-white rounded-lg flex flex-col items-center text-center justify-center max-sm:my-8">
+            <img src="./image/Icon.svg" alt="">
+            <h1 class="font-semibold py-4">UI/UX Design</h1>
+            <p class="">Turn what you have in mind of a digital product into reality. For any platform you consider.</p>
+        </div>
+        <div class="md:w-64 box w-80 h-72 bg-white rounded-lg flex flex-col items-center text-center justify-center">
+            <img src="./image/Icon (1).svg" alt="">
+            <h1 class="font-semibold py-4">Application Development</h1>
+            <p class="">Standard designing, building, and implementing your applications with documentation.
+            </p>
+        </div>
+        <div class="md:w-64 box w-80 h-72 bg-white rounded-lg flex flex-col items-center text-center justify-center max-sm:my-8">
+            <img src="./image/Icon (2).svg" alt="">
+            <h1 class="font-semibold py-4">Web Development</h1>
+            <p class="">Create and maintain your websites and also take care of its performance and traffic capacity.</p>
+        </div>
+    </div>
+    </section>
+    <section data-="zoom-in-up" class="lg:h-[500px] section-e w-full p-10  justify-around " id="skills">
+        <div>
+            <p class="text-xs tracking-[.30em] text-">LEARNING PATH</p>
+            <h1 class="text-3xl font-bold text-[#232E35]">Education & Skills</h1>
+        </div>
+        <section class="flex max-sm:block justify-around ">
+        <div class="w-96 flex gap-4">
+            <div class="py-8 relative">
+                <img src="./image/Circle.svg" alt="">
+                <img class="my-32" src="./image/Circle.svg" alt="">
+                <img src="./image/Circle.svg" alt="">
+                <img class="absolute top-8 left-2" src="./image/Line.svg" alt="">
+            </div>
+            <div class="py-8">
+                <p class="font-semibold text-[#656D72]">
+                    LAUTECH University <br>
+                    <span class="text-xs">B.Tech Degree - Crop Production And Soil Science</span><br>
+                    <span class="text-xs">2020 - 2025</span>
+                </p>
+                <p class="font-semibold text-[#656D72] my-16">
+                    The Polytechnic Ibadan <br>
+                    <span class="text-xs">Diploma's Degree - Science Laboratory Technology<br>
+                    <span class="text-xs">2018 - 2020</span>
+                </p>
+                <p class="font-semibold text-[#656D72]">
+                    Immanuel College High School IB. <br>
+                    <span class="text-xs"> SSCE</span><br>
+                    <span class="text-xs">2010 - 2016</span>
+                </p>
+            </div>
+        </div>
+        <div class="py-8 w-96">
+            <p class="text-xs font-semibold text-[#656D72]">For 2+ years, I have been continuously learning in the field of front-end and experimenting with new technologies and frameworks, and here you can see a summary of my skills.
+            </p>
+            <div class="py-4">
+                <h1 class="text-sm font-semibold text-[#656D72]">HTML</h1>
+                <div class="w-80 h-1 bg-[#656D72] rounded-lg"><div class="w-72 h-1 bg-[#7E74F1] rounded-l-lg"></div></div>
+                <h1 class="text-sm font-semibold text-[#656D72] pt-6">CSS</h1>
+                <div class="w-80 h-1 bg-[#656D72] rounded-lg"><div class="w-60 h-1 bg-[#7E74F1] rounded-l-lg"></div></div>
+                <h1 class="text-sm font-semibold text-[#656D72] pt-6">Tailwind</h1>
+                <div class="w-80 h-1 bg-[#656D72] rounded-lg"><div class="w-72 h-1 bg-[#7E74F1] rounded-l-lg"></div></div>
+                <h1 class="text-sm font-semibold text-[#656D72] pt-6">Javascript</h1>
+                <div class="w-80 h-1 bg-[#656D72] rounded-lg"><div class="w-56 h-1 bg-[#7E74F1] rounded-l-lg"></div></div>
+                <h1 class="text-sm font-semibold text-[#656D72] pt-6">React</h1>
+                <div class="w-80 h-1 bg-[#656D72] rounded-lg"><div class="w-64 h-1 bg-[#7E74F1] rounded-l-lg"></div></div>
+            </div>
+             
+        </div>
+    </section>
+    </section>
+    <section class="h-[500px] section-e w-full bg-[#F5F3FE] justify-around flex max-sm:flex-col items-center p-10" id="experience">
+        <div class="w-96 " >
+            <p class="text-xs tracking-[.30em] py-2 text-[#656D72]">CAREER PATH</p>
+            <h1 class="text-3xl font-bold pb-8 text-[#232E35]">Work Experiences</h1>
+            <div class="lg:block flex gap-4 ">
+            <button id="cephas" onclick="cepdetails()" class="hover:bg-white btn-1 hover:text-[#7E74F1] text-sm text-[#656D72] hover:px-4  flex gap-8">CEPHAS ICT  <span>  > </span> </button><br>
+            <button id="devgram" onclick="devdetails()" class="hover:bg-white btn-1 hover:text-[#7E74F1] text-sm text-[#656D72] hover:px-4 flex gap-8">DEVGRAM ICT <span>  > </span> </button>
+            </div>
+
+
+        </div>
+        <div class="" id="detail">
+            <h1 class="text-[#232E35] font-semibold">Front-end Developer & Tutor</h1>
+            <p class="text-xs text-[#656D72]">Under G Ogbomosho, Oyo State</p>
+            <p class="text-xs text-[#656D72] font-semibold pb-8">January 2022 - Present</p>
+            <hr>
+            <ul class="list-disc text-sm text-[#656D72]">
+                <li>Improving overall website performance for mobile users.</li>
+                <li>Collaborate with back-end developers and web designers to improve usability</li>
+                <li>Developing an admin panel to manage contents, users And products</li>
+            </ul>
+
+        </div>
+        <div class="hidden" id="details">
+            <h1 class="text-[#232E35] font-semibold">Front-end Developer & Tutor</h1>
+            <p class="text-xs text-[#656D72]">Under G Ogbomosho, Oyo State</p>
+            <p class="text-xs text-[#656D72] font-semibold pb-8">November 2022 - Present</p>
+            <hr>
+            <ul class="list-disc text-sm text-[#656D72]">
+                <li>Learn python and other back-end.</li>
+                <li>Collaborate with back-end developers and web designers to improve usability</li>
+                <li>Helps me to become more versatile and adaptable in my development approach</li>
+            </ul>
+
+        </div>
+
+    </section>
+    <section data-="zoom-in-up" id="contact" class="w-full section-e flex flex-col items-center justify-center py-6" >
+        <img class="h-8" src="./image/email.svg" alt="">
+        <h1 class="font-bold text-[#232E35]">Email</h1>
+        <p class="text-xs text-[#656D72] pb-4">amosdavid674@gmail.com</p>
+        <img class="h-8" src="./image/phone.svg" alt="">
+        <h1 class="font-bold text-[#232E35]">Phone</h1>
+        <p class="text-xs text-[#656D72] pb-4">+2348105965059</p>
+        <h1 class="font-bold text-[#232E35]">Credentials</h1>
+        <a class="text-xs text-[#656D72] mb-4 p-1 bg-white rounded-lg border-2" href="">Download CV</a>
+        <h1 class="font-bold text-[#232E35]">Social</h1>
+        
+        <div class="flex gap-4 py-2">
+            <a href="https://www.instagram.com/david.ade100?igsh=MXg3ajE3NHBqMmJweQ%3D%3D&utm_source=qr"><img class="h-4 " src="./image/instagram.png" alt=""></a>
+            <a href="https://twitter.com/AdebayorDavid"><img class="h-4 " src="./image/twitter.png" alt=""></a>
+            <a href="https://www.facebook.com/david.amos.100046?mibextid=LQQJ4d"><img class="h-4 " src="./image/facebook.png" alt=""></a>
+        </div>
+
+    </section>
+        <a class="fixed bottom-10 right-4 " href="https://api.whatsapp.com/send?phone=+2348105965059&text=Hello My Name is......%3F"><img class="h-10" src="./image/whatsapp-icon.svg" alt=""></a>
+        <a class="bg-black absolute right-4 border-2 rounded-lg text-white px-4" href="#top">Top</a>
+        <footer class="w-full h-8 flex items-center justify-center">
+            <span class="text-xs copy font-semibold text-[#232E35]">&copy; 2024 Created by ADE</span>
+
+        </footer>
+        
+
+        <script>
+           
+            function opencontent() {
+                const modal = document.getElementById("content")
+            const open = document.getElementById("openbtn")
+            const close = document.getElementById("closebtn")
+            modal.style.display = "block"
+            open.style.display = "none"
+            close.style.display = "block"
+            modal.classList.add("fadeIn")
+            close.classList.add("fadeIn")
+
+                
+            }
+            function closecontent() {
+                const modal = document.getElementById("content")
+            const open = document.getElementById("openbtn")
+            const close = document.getElementById("closebtn")
+            modal.style.display = "none"
+            open.style.display = "block"
+            close.style.display = "none"
+            open.classList.add("fadeIn")
+            modal.classList.add("fadeIn")
+
+                
+            }
+            window.addEventListener('resize', function() {
+                const modal = document.getElementById("content")
+            const open = document.getElementById("openbtn")
+            const close = document.getElementById("closebtn")
+                if (window.innerWidth > 768) {
+                    modal.style.display = "none"
+                    close.style.display = "none"
+                    open.style.display = "none"
+                } else {
+                  open.style.display = "block"  
+                }
+                
+            })
+
+            
+                function devdetails() {
+                    const cepd = document.getElementById("detail")
+                    const det = document.getElementById("details")
+                    const dev = document.getElementById("devgram")
+                    const cep = document.getElementById("cephas")
+                    det.style.display = "block"
+                    cepd.style.display = "none"
+                    dev.style.backgroundColor = "white"
+                    dev.style.color = "#7e74f1"
+                    dev.style.paddingLeft = "10px"
+                    cep.style.backgroundColor = "transparent"
+                    cep.style.color = "#656d72"
+                    cep.style.paddingLeft = "0"
+                    
+                }
+                function cepdetails() {
+                    const cepd = document.getElementById("detail")
+                    const det = document.getElementById("details")
+                    const dev = document.getElementById("devgram")
+                    const cep = document.getElementById("cephas")
+
+                    det.style.display = "none"
+                    cepd.style.display = "block"
+                    dev.style.backgroundColor = "transparent"
+                    dev.style.color = "#656d72"
+                    dev.style.paddingLeft = "0"
+                    cep.style.backgroundColor = "white"
+                    cep.style.color = "#7e74f1"
+                    cep.style.paddingLeft = "10px"
+                    
+                }
+                function dark() {
+                
+                    document.body.classList.toggle('dark-mode')
+                    document.p.classList.toggle('dark-mode')
+
+                    
+
+
+                }
+                AOS.init()
+               
+
+
+
+        </script>
+  </body>
+</html>
