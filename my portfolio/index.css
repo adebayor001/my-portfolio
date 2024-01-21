@@ -1,0 +1,104 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body.dark-mode{
+    background-color: rgb(7, 2, 19);
+    color: white;
+}
+.dark-mode p{
+    color: white;
+}
+.dark-mode button{
+    background-color: white;
+    color: #656d72;
+}
+.dark-mode a{
+    color: white;
+    background-color:  rgb(7, 2, 19);
+}
+.dark-mode h1{
+    color: white;
+}
+.dark-mode .section-e{
+    background-color:  rgb(7, 2, 19);
+    border-top: 1px solid gray ;
+    
+}
+.dark-mode div{
+    color:  rgb(7, 2, 19);
+}
+.dark-mode .btn{
+    display: none;
+}
+.dark-mode .lit{
+    display: block;
+    background-color:  rgb(7, 2, 19);
+}
+.dark-mode .btn-1{
+    background-color:  rgb(7, 2, 19);
+    color: white;
+}
+.dark-mode ul{
+    color: white;
+}
+.dark-mode .cv{
+    background-color:  rgb(7, 2, 19);
+    color: white;
+}
+.dark-mode .box{
+    background-color: rgb(17, 3, 44);
+}
+.dark-mode .copy{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.opencont{
+animation: fadeIn 0.8s;
+}
+.closecont{
+    animation: fadeIn 0.8s;
+}
+.cont{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
